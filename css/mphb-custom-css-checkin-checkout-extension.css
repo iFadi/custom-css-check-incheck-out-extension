@@ -1,0 +1,8 @@
+.datepick .datepick-month td .check-out-check-in-customized {
+    background: url('../images/gastwechsel.png') !important;
+    font-weight: normal;
+    color: black;
+    background-size: 45px !important;
+    font-weight: bold !important;
+    font-size: 16px;
+}
