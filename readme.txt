@@ -38,9 +38,7 @@ The CSS styles pertinent to the custom class can be added to `mphb-custom-css-ch
 
 == Screenshots ==
 
-1. [Description of screenshot 1]
-2. [Description of screenshot 2]
-(Include image files in the /assets directory, named screenshot-1.png, screenshot-2.png, etc.)
+1. Screenshot 1: The booking calendar with the custom CSS applied.
 
 == Changelog ==
 
