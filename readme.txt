@@ -1,6 +1,6 @@
 === MPHB Custom CSS Check-in/Check-out Extension ===
 Contributors: fadiasbih
-Donate link: [Your Donate Link Here]
+Donate link: https://donate.asbih.com/
 Tags: booking, custom, motopress, check-in, check-out
 Requires at least: 5.0
 Requires PHP: 7.0
