@@ -1,11 +1,11 @@
-=== MPHB Custom CSS Check-in/Check-out Extension ===
+=== Custom CSS Check-in/Check-out Extension for Motopress HotelBooking ===
 Contributors: fadiasbih
 Donate link: https://donate.asbih.com/
 Tags: booking, custom, motopress, check-in, check-out
 Requires at least: 5.0
 Requires PHP: 7.0
-Tested up to: 5.8
-Stable tag: 1.0
+Tested up to: 6.4
+Stable tag: 1.0.0
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
 
@@ -13,7 +13,7 @@ A WordPress extension that customizes the booking calendar of the MotoPress Hote
 
 == Description ==
 
-The MPHB Custom CSS Check-in/Check-out Extension enhances the MotoPress Hotel Booking plugin by altering the visual representation of its booking calendar. It focuses on dates with identical check-in and check-out entries, applying a distinctive CSS class to offer visual guidance to both administrators and website visitors.
+The "Custom CSS Check-in/Check-out Extension for Motopress HotelBooking" enhances the MotoPress Hotel Booking plugin by altering the visual representation of its booking calendar. It focuses on dates with identical check-in and check-out entries, applying a distinctive CSS class to offer visual guidance to both administrators and website visitors.
 
 Main Features:
 - Recognizes dates with matching check-in and check-out entries.
@@ -22,7 +22,7 @@ Main Features:
 
 == Installation ==
 
-1. Upload the entire `mphb-custom-css-checkin-checkout-extension` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `custom-css-check-incheck-out-extension` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Ensure that the MotoPress Hotel Booking plugin is installed and activated, as this extension is dependent on it.
 
@@ -34,18 +34,13 @@ The MotoPress Hotel Booking plugin must be installed and activated as this custo
 
 = Where do I add my custom CSS styles? =
 
-The CSS styles pertinent to the custom class can be added to `mphb-custom-css-checkin-checkout-extension.css` in the plugin directory.
+The CSS styles pertinent to the custom class can be added to `custom-css-check-incheck-out-extension.css` in the plugin directory.
 
 == Screenshots ==
 
 1. Screenshot 1: The booking calendar with the custom CSS applied.
 
-== Changelog ==
-
-= 1.0 =
-* Initial release.
-
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.0 =
 * Initial release.

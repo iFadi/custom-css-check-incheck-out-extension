@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: MPHB Custom CSS Check-in/Check-out Extension
+ * Plugin Name: Custom CSS Check-in/Check-out Extension for Motopress HotelBooking
  * Plugin URI: https://kolibri-visions.de
  * Description: Customizes the booking calendar of the MotoPress Hotel Booking plugin, providing additional visual for certain dates.
  * Version: 1.0.0
  * Author: Fadi Asbih <fadi.asbih@kolibri-visions.de>, Khaled El-Kailani <khaledelkailani@kolibri-visions.de>
- * Author URI: https://asbih.com/
+ * Author URI: https://github.com/iFadi/custom-css-check-incheck-out-extension
  * License: MIT License
  * License URI: https://opensource.org/licenses/MIT
  **/
@@ -203,21 +203,21 @@ function enqueue_custom_booking_styles_scripts() {
     // Check if the current path starts with the base path
     if ( strpos( $current_path, $base_path_to_include ) === 0 ) {
         // Dynamic versioning for cache-busting
-        $script_ver = filemtime( plugin_dir_path( __FILE__ ) . 'js/mphb-custom-css-checkin-checkout-extension-script.js' );
-        $style_ver  = filemtime( plugin_dir_path( __FILE__ ) . 'css/mphb-custom-css-checkin-checkout-extension.css' );
+        $script_ver = filemtime(plugin_dir_path(__FILE__) . 'js/custom-css-check-incheck-out-extension-script.js');
+        $style_ver  = filemtime(plugin_dir_path(__FILE__) . 'css/custom-css-check-incheck-out-extension.css');
 
         // Fetch the current post ID
         $current_post_id = get_the_ID();
 
         // Enqueue custom JavaScript with dynamic versioning.
-        wp_enqueue_script('mphb-custom-css-checkin-checkout-extension-script', plugin_dir_url(__FILE__) . 'js/mphb-custom-css-checkin-checkout-extension-script.js', array('jquery'), $script_ver, true);
+        wp_enqueue_script('custom-css-check-incheck-out-extension-script', plugin_dir_url(__FILE__) . 'js/custom-css-check-incheck-out-extension-script.js', array('jquery'), $script_ver, true);
 
         // Localize script to pass PHP variables to JavaScript.
-        wp_localize_script('mphb-custom-css-checkin-checkout-extension-script', 'bookingData', array('dates' => fetch_check_in_out_dates()));
+        wp_localize_script('custom-css-check-incheck-out-extension-script', 'bookingData', array('dates' => fetch_check_in_out_dates()));
 
         
         // Enqueue custom CSS with dynamic versioning.
-        wp_enqueue_style('mphb-custom-css-checkin-checkout-extension', plugin_dir_url(__FILE__) . 'css/mphb-custom-css-checkin-checkout-extension.css', array(), $style_ver, 'all');
+        wp_enqueue_style('custom-css-check-incheck-out-extension', plugin_dir_url(__FILE__) . 'css/custom-css-check-incheck-out-extension.css', array(), $style_ver, 'all');
     }
 }
 
